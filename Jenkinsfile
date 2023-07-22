@@ -1,6 +1,6 @@
 node {
   stage("Clone the project") {
-    git branch: 'main', url: 'git@github.com:jbcboado/themepark.git
+    git branch: 'main', url: 'https://github.com/jbcboado/themepark.git'
   }
 
   stage("Compilation") {
