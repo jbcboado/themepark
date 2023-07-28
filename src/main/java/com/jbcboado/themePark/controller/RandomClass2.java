@@ -10,7 +10,7 @@ public class RandomClass2 {
 
         StrFormatter sf = s -> s.trim().toLowerCase();
 
-        List<String> strList = Arrays.asList("John", "mayA", "Mary", "   Anne", "d", null, "Anthony", "Maya", "mary", "jOhn");
+        List<String> strList = Arrays.asList("Jon", "mayA", "Mary", "   Anne", "d", null, "Anthony", "Maya", "mary", "jOhn");
         List<String> output = new ArrayList<>();
         strList.stream().filter(s -> (s!=null && !s.isBlank())).forEach(s -> output.add(sf.formatStr(s)));
         output.stream().distinct().sorted().forEach(s -> System.out.println(s));
