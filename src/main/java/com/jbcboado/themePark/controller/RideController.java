@@ -27,4 +27,9 @@ public class RideController {
         return ResponseEntity.ok(rideService.getRideById(id));
     }
 
+    @GetMapping("/test")
+    public ResponseEntity<?> test(){
+        return ResponseEntity.ok("Hello world..........!");
+    }
+
 }
